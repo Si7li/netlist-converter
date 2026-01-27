@@ -1,0 +1,6 @@
+VDD 2 0 DC
+IREF 2 3 DC
+R1 2 3 R1
+R2 3 4 R2
+M1 3 3 0 0 NMOS_model
+M2 4 3 0 0 NMOS_model

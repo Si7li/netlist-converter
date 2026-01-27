@@ -1,0 +1,8 @@
+V1 1 0 DC 0
+D1 1 2 Dmodel
+D2 2 3 Dmodel
+D3 1 4 Dmodel
+D4 4 3 Dmodel
+R1 2 3 1k
+.model Dmodel D
+.end

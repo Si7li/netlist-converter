@@ -1,0 +1,8 @@
+VDD 2 0 DC VDD
+IREF 2 3 DC IREF
+R1 2 3 R1_value
+R2 3 4 R2_value
+M1 3 3 0 0 NMOS_model
+M2 4 3 0 0 NMOS_model
+.model NMOS_model NMOS (Level=1)
+.end

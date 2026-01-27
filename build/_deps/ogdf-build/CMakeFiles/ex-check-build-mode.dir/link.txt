@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-check-build-mode.dir/link.d "CMakeFiles/ex-check-build-mode.dir/doc/examples/special/check-build-mode.cpp.o" -o ../ogdf-src/doc/examples/special/ex-check-build-mode  libOGDF.a libCOIN.a -lpthread

@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    version="1.1"
+    baseProfile="full"
+    viewBox="46 45 547 359">
+    <style>
+        .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
+        .hori { font-size: 16; fill: #000000; text-anchor: middle }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+        <polygon points="0 0, 4 4, 0 8" />
+        </marker>
+    </defs>
+    <g>
+        <rect x="46" y="45" width="547" height="359" style="fill:#ffffff" />
+    </g>
+    <g>
+        <g>
+            <path fill="none" d="M 366 85 L 460 85" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 553 85 L 460 85" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 177 L 366 85" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 270 L 366 177" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 364 L 273 317" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 226 85 L 366 85" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 180 364 L 273 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 180 364 L 86 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 317 L 366 270" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 270 L 366 270" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 270 L 273 317" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 85 L 226 85" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 85 L 86 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 364 L 273 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 364 L 366 317" stroke="#000000" />
+        </g>
+    </g>
+    <g>
+        <circle cx="460" cy="85" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="460" cy="85" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="468" y1="85" x2="452" y2="85" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="460" y="62" class="hori">V1</text>
+        <text x="460" y="119" class="hori">12V</text>
+    </g>
+    <g>
+        <circle cx="366" cy="85" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <path d="M 553,85 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 573,105 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g>
+        <circle cx="553" cy="85" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <polygon points="366,162 351,177 381,177" style="fill:none;stroke:#000000;stroke-width:1" />
+        <line x1="351" y1="177" x2="381" y2="177" stroke="#000000" stroke-width="2" />
+        <text x="386" y="177" class="vert">D1</text>
+        <text x="386" y="193" class="vert">Dmodel</text>
+    </g>
+    <g>
+        <circle cx="366" cy="270" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <polygon points="273,302 258,317 288,317" style="fill:none;stroke:#000000;stroke-width:1" />
+        <line x1="258" y1="317" x2="288" y2="317" stroke="#000000" stroke-width="2" />
+        <text x="293" y="317" class="vert">D2</text>
+        <text x="293" y="333" class="vert">Dmodel</text>
+    </g>
+    <g>
+        <circle cx="273" cy="364" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <polygon points="211,85 226,70 226,100" style="fill:none;stroke:#000000;stroke-width:1" />
+        <line x1="226" y1="70" x2="226" y2="100" stroke="#000000" stroke-width="2" />
+        <text x="226" y="65" class="hori">D3</text>
+        <text x="226" y="81" class="hori">Dmodel</text>
+    </g>
+    <g>
+        <polygon points="165,364 180,349 180,379" style="fill:none;stroke:#000000;stroke-width:1" />
+        <line x1="180" y1="349" x2="180" y2="379" stroke="#000000" stroke-width="2" />
+        <text x="180" y="344" class="hori">D4</text>
+        <text x="180" y="360" class="hori">Dmodel</text>
+    </g>
+    <g>
+        <rect x="356" y="297" width="20" height="40" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="381" y="317" class="vert">R1</text>
+        <text x="381" y="333" class="vert">1k</text>
+    </g>
+</svg>

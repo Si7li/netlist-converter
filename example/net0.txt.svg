@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    version="1.1"
+    baseProfile="full"
+    viewBox="46 46 172 174">
+    <style>
+        .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
+        .hori { font-size: 16; fill: #000000; text-anchor: middle }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+        <polygon points="0 0, 4 4, 0 8" />
+        </marker>
+    </defs>
+    <g>
+        <rect x="46" y="46" width="172" height="174" style="fill:#ffffff" />
+    </g>
+    <g>
+        <g>
+            <path fill="none" d="M 178 180 L 178 133" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 133 L 86 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 178 86 L 178 133" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 178 86 L 86 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 180 L 178 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 180 L 86 133" stroke="#000000" />
+        </g>
+    </g>
+    <g>
+        <circle cx="178" cy="133" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="178" cy="133" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="178" y1="141" x2="178" y2="125" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="201" y="133" class="vert">V1</text>
+        <text x="201" y="149" class="vert">1</text>
+    </g>
+    <g>
+        <path d="M 178,180 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 198,200 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g>
+        <circle cx="178" cy="180" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="76" y="113" width="20" height="40" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="101" y="133" class="vert">R1</text>
+        <text x="101" y="149" class="vert">10k</text>
+    </g>
+</svg>

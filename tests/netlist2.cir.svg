@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    version="1.1"
+    baseProfile="full"
+    viewBox="46 46 266 267">
+    <style>
+        .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
+        .hori { font-size: 16; fill: #000000; text-anchor: middle }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+        <polygon points="0 0, 4 4, 0 8" />
+        </marker>
+    </defs>
+    <g>
+        <rect x="46" y="46" width="266" height="267" style="fill:#ffffff" />
+    </g>
+    <g>
+        <g>
+            <path fill="none" d="M 86 86 L 179 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 180 L 86 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 180 226 L 180 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 272 227 L 272 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 272 86 L 179 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 272 86 L 272 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 273 L 86 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 273 L 180 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 180 180 L 272 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 180 180 L 180 226" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 272 273 L 180 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 272 273 L 272 227" stroke="#000000" />
+        </g>
+    </g>
+    <g>
+        <circle cx="179" cy="86" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="179" cy="86" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="187" y1="86" x2="171" y2="86" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="179" y="63" class="hori">V1</text>
+        <text x="179" y="120" class="hori">DC</text>
+    </g>
+    <g>
+        <path d="M 272,180 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 292,200 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g>
+        <circle cx="272" cy="180" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="76" y="160" width="20" height="40" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="101" y="180" class="vert">R1</text>
+        <text x="101" y="196" class="vert">1k</text>
+    </g>
+    <g>
+        <circle cx="180" cy="273" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="170" y="221" width="20" height="10" style="fill:#ffffff" />
+        <line x1="170" y1="221" x2="190" y2="221" stroke="#000000" stroke-width="1" />
+        <line x1="170" y1="231" x2="190" y2="231" stroke="#000000" stroke-width="1" />
+        <text x="195" y="226" class="vert">C1</text>
+        <text x="195" y="242" class="vert">1u</text>
+    </g>
+    <g>
+        <rect x="268" y="209" width="12" height="36" style="fill:#ffffff" />
+        <path d="M 272,209 C 280,213 280,217 272,221 C 280,225 280,229 272,233 C 280,237 280,241 272,245 " style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="285" y="227" class="vert">L1</text>
+        <text x="285" y="243" class="vert">1m</text>
+    </g>
+</svg>

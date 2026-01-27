@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/pack-resources.dir/link.d "CMakeFiles/pack-resources.dir/test/src/pack-resources.cpp.o" -o test/pack-resources

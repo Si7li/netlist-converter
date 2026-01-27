@@ -1,0 +1,3 @@
+/home/khalils/Desktop/Projects/PFA/netlist_converter/build/_deps/ogdf-subbuild/CMakeFiles/ogdf-populate.dir
+/home/khalils/Desktop/Projects/PFA/netlist_converter/build/_deps/ogdf-subbuild/CMakeFiles/edit_cache.dir
+/home/khalils/Desktop/Projects/PFA/netlist_converter/build/_deps/ogdf-subbuild/CMakeFiles/rebuild_cache.dir

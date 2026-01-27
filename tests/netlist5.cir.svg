@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    version="1.1"
+    baseProfile="full"
+    viewBox="46 46 619 624">
+    <style>
+        .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
+        .hori { font-size: 16; fill: #000000; text-anchor: middle }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+        <polygon points="0 0, 4 4, 0 8" />
+        </marker>
+    </defs>
+    <g>
+        <rect x="46" y="46" width="619" height="624" style="fill:#ffffff" />
+    </g>
+    <g>
+        <rect x="248" y="443" width="24" height="30" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="244" y1="448" x2="244" y2="468" stroke="#000000" stroke-width="2" />
+        <line x1="233" y1="458" x2="244" y2="458" stroke="#000000" stroke-width="1" />
+        <line x1="260" y1="443" x2="260" y2="433" stroke="#000000" stroke-width="1" />
+        <line x1="260" y1="473" x2="260" y2="483" stroke="#000000" stroke-width="1" />
+        <line x1="254" y1="448" x2="254" y2="468" stroke="#000000" stroke-width="1" />
+        <text x="264" y="439" style="font-size:8;fill:#666666">D</text>
+        <text x="226" y="461" style="font-size:8;fill:#666666">G</text>
+        <text x="264" y="485" style="font-size:8;fill:#666666">S</text>
+        <text x="282" y="458" class="vert">M1</text>
+        <text x="282" y="474" class="vert">NMOS</text>
+    </g>
+    <g>
+        <rect x="248" y="258" width="24" height="30" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="244" y1="263" x2="244" y2="283" stroke="#000000" stroke-width="2" />
+        <line x1="233" y1="273" x2="244" y2="273" stroke="#000000" stroke-width="1" />
+        <line x1="260" y1="258" x2="260" y2="248" stroke="#000000" stroke-width="1" />
+        <line x1="260" y1="288" x2="260" y2="298" stroke="#000000" stroke-width="1" />
+        <line x1="254" y1="263" x2="254" y2="283" stroke="#000000" stroke-width="1" />
+        <text x="264" y="254" style="font-size:8;fill:#666666">D</text>
+        <text x="226" y="276" style="font-size:8;fill:#666666">G</text>
+        <text x="264" y="300" style="font-size:8;fill:#666666">S</text>
+        <text x="282" y="273" class="vert">M2</text>
+        <text x="282" y="289" class="vert">NMOS</text>
+    </g>
+    <g>
+        <rect x="520" y="71" width="24" height="30" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="516" y1="76" x2="516" y2="96" stroke="#000000" stroke-width="2" />
+        <line x1="505" y1="86" x2="516" y2="86" stroke="#000000" stroke-width="1" />
+        <line x1="532" y1="71" x2="532" y2="61" stroke="#000000" stroke-width="1" />
+        <line x1="532" y1="101" x2="532" y2="111" stroke="#000000" stroke-width="1" />
+        <line x1="526" y1="76" x2="526" y2="96" stroke="#000000" stroke-width="1" />
+        <text x="536" y="67" style="font-size:8;fill:#666666">D</text>
+        <text x="498" y="89" style="font-size:8;fill:#666666">G</text>
+        <text x="536" y="113" style="font-size:8;fill:#666666">S</text>
+        <text x="554" y="86" class="vert">M3</text>
+        <text x="554" y="102" class="vert">NMOS</text>
+    </g>
+    <g>
+        <g>
+            <path fill="none" d="M 625 273 L 625 366" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 446 273 L 625 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 353 273 L 446 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 625 180 L 625 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 625 86 L 625 180" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 213 366 L 260 366" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 625 458 L 625 366" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 625 458 L 532 458" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 166 366 L 166 273" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 166 366 L 213 366" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 260 433 L 260 366" stroke="#CC0000" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 233 458 L 532 458" stroke="#0000CC" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 260 483 L 166 483 L 166 273" stroke="#00AA00" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 260 248 L 260 366" stroke="#CC0000" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 233 273 L 353 273" stroke="#0000CC" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 260 298 L 166 298 L 166 273" stroke="#00AA00" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 532 61 L 260 61 L 260 366" stroke="#CC0000" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 505 86 L 625 86" stroke="#0000CC" stroke-width="2" />
+        </g>
+        <g>
+            <path fill="none" d="M 532 111 L 166 111 L 166 273" stroke="#00AA00" stroke-width="2" />
+        </g>
+    </g>
+    <g>
+        <circle cx="625" cy="366" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="625" cy="366" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="625" y1="358" x2="625" y2="374" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="648" y="366" class="vert">V1</text>
+        <text x="648" y="382" class="vert">DC</text>
+    </g>
+    <g>
+        <path d="M 625,273 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 645,293 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g>
+        <circle cx="625" cy="273" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <circle cx="446" cy="273" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="446" cy="273" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="454" y1="273" x2="438" y2="273" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="446" y="250" class="hori">V2</text>
+        <text x="446" y="307" class="hori">DC</text>
+    </g>
+    <g>
+        <circle cx="625" cy="180" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="625" cy="180" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="625" y1="188" x2="625" y2="172" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="648" y="180" class="vert">V3</text>
+        <text x="648" y="196" class="vert">DC</text>
+    </g>
+    <g>
+        <circle cx="260" cy="366" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <circle cx="166" cy="273" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="193" y="356" width="40" height="20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="213" y="351" class="hori">R1</text>
+        <text x="213" y="397" class="hori">1k</text>
+    </g>
+</svg>

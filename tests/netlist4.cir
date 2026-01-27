@@ -1,0 +1,5 @@
+Q1 2 3 4 N40004
+Q2 2 2 5 N40004
+VCC 2 0 DC 15V
+VEE 5 0 DC -15V
+* End of Netlist

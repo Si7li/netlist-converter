@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-pctree.dir/link.d "CMakeFiles/ex-pctree.dir/doc/examples/basic/pctree.cpp.o" -o ../ogdf-src/doc/examples/basic/ex-pctree  libOGDF.a libCOIN.a -lpthread

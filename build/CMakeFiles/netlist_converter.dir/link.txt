@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnetlist_converter.a CMakeFiles/netlist_converter.dir/src/asc_writer.cpp.o CMakeFiles/netlist_converter.dir/src/graph.cpp.o CMakeFiles/netlist_converter.dir/src/layoutizer.cpp.o CMakeFiles/netlist_converter.dir/src/line_view.cpp.o CMakeFiles/netlist_converter.dir/src/net_parser.cpp.o CMakeFiles/netlist_converter.dir/src/node.cpp.o CMakeFiles/netlist_converter.dir/src/svg_writer.cpp.o CMakeFiles/netlist_converter.dir/src/svg_node_writer.cpp.o
+/usr/bin/ranlib libnetlist_converter.a

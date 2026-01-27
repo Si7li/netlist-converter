@@ -1,0 +1,1 @@
+/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-hierarchical-ranking.dir/link.d "CMakeFiles/ex-hierarchical-ranking.dir/doc/examples/layout/hierarchical-ranking.cpp.o" -o ../ogdf-src/doc/examples/layout/ex-hierarchical-ranking  libOGDF.a libCOIN.a -lpthread

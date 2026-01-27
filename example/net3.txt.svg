@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    version="1.1"
+    baseProfile="full"
+    viewBox="46 46 360 358">
+    <style>
+        .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
+        .hori { font-size: 16; fill: #000000; text-anchor: middle }
+    </style>
+    <defs>
+        <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
+        <polygon points="0 0, 4 4, 0 8" />
+        </marker>
+    </defs>
+    <g>
+        <rect x="46" y="46" width="360" height="358" style="fill:#ffffff" />
+    </g>
+    <g>
+        <g>
+            <path fill="none" d="M 86 272 L 180 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 272 L 180 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 179 L 86 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 180 L 273 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 180 L 273 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 364 L 86 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 364 L 179 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 364 L 273 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 273 364 L 179 364" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 86 L 86 179" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 86 86 L 273 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 272 L 273 272" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 272 L 366 179" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 86 L 273 86" stroke="#000000" />
+        </g>
+        <g>
+            <path fill="none" d="M 366 86 L 366 179" stroke="#000000" />
+        </g>
+    </g>
+    <g>
+        <circle cx="180" cy="272" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="180" cy="272" r="15" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="172" y1="272" x2="188" y2="272" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="180" y="249" class="hori">I1</text>
+        <text x="180" y="306" class="hori">1</text>
+    </g>
+    <g>
+        <circle cx="86" cy="272" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <path d="M 273,272 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 293,292 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g>
+        <circle cx="273" cy="272" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="159" y="354" width="40" height="20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="179" y="349" class="hori">R1</text>
+        <text x="179" y="395" class="hori">10k</text>
+    </g>
+    <g>
+        <rect x="76" y="174" width="20" height="10" style="fill:#ffffff" />
+        <line x1="76" y1="174" x2="96" y2="174" stroke="#000000" stroke-width="1" />
+        <line x1="76" y1="184" x2="96" y2="184" stroke="#000000" stroke-width="1" />
+        <text x="101" y="179" class="vert">C1</text>
+        <text x="101" y="195" class="vert">10n</text>
+    </g>
+    <g>
+        <circle cx="273" cy="86" r="2" style="fill:#000000" />
+    </g>
+    <g>
+        <rect x="269" y="162" width="12" height="36" style="fill:#ffffff" />
+        <path d="M 273,162 C 281,166 281,170 273,174 C 281,178 281,182 273,186 C 281,190 281,194 273,198 " style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="286" y="180" class="vert">L1</text>
+        <text x="286" y="196" class="vert">5.3</text>
+    </g>
+    <g>
+        <rect x="356" y="174" width="20" height="10" style="fill:#ffffff" />
+        <line x1="356" y1="174" x2="376" y2="174" stroke="#000000" stroke-width="1" />
+        <line x1="356" y1="184" x2="376" y2="184" stroke="#000000" stroke-width="1" />
+        <text x="381" y="179" class="vert">C2</text>
+        <text x="381" y="195" class="vert">20n</text>
+    </g>
+</svg>
