@@ -57,3 +57,4 @@ Directory *example* contains example netlists that can be successfully parsed.
 
 <img src="./example/net3.png">
 # netlist-converter
+# netlist-simulator
