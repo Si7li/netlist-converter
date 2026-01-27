@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-subgraph-planarizer.dir/link.d "CMakeFiles/ex-subgraph-planarizer.dir/doc/examples/basic/subgraph-planarizer.cpp.o" -o ../ogdf-src/doc/examples/basic/ex-subgraph-planarizer  libOGDF.a libCOIN.a -lpthread

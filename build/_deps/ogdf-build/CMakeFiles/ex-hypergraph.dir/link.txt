@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-hypergraph.dir/link.d "CMakeFiles/ex-hypergraph.dir/doc/examples/layout/hypergraph.cpp.o" -o ../ogdf-src/doc/examples/layout/ex-hypergraph  libOGDF.a libCOIN.a -lpthread

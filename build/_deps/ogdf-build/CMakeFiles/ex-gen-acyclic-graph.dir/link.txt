@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-gen-acyclic-graph.dir/link.d "CMakeFiles/ex-gen-acyclic-graph.dir/doc/examples/basic/gen-acyclic-graph.cpp.o" -o ../ogdf-src/doc/examples/basic/ex-gen-acyclic-graph  libOGDF.a libCOIN.a -lpthread

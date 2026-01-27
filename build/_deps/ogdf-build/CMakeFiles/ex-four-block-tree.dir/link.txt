@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-four-block-tree.dir/link.d "CMakeFiles/ex-four-block-tree.dir/doc/examples/decomposition/four-block-tree.cpp.o" -o ../ogdf-src/doc/examples/decomposition/ex-four-block-tree  libOGDF.a libCOIN.a -lpthread

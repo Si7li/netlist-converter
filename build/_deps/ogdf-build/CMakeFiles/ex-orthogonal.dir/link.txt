@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-orthogonal.dir/link.d "CMakeFiles/ex-orthogonal.dir/doc/examples/layout/orthogonal.cpp.o" -o ../ogdf-src/doc/examples/layout/ex-orthogonal  libOGDF.a libCOIN.a -lpthread

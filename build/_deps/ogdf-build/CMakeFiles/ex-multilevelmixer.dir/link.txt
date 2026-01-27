@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-multilevelmixer.dir/link.d "CMakeFiles/ex-multilevelmixer.dir/doc/examples/layout/multilevelmixer.cpp.o" -o ../ogdf-src/doc/examples/layout/ex-multilevelmixer  libOGDF.a libCOIN.a -lpthread

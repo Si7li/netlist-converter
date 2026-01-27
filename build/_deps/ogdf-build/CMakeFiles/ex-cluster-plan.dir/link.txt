@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-cluster-plan.dir/link.d "CMakeFiles/ex-cluster-plan.dir/doc/examples/cluster/cluster-plan.cpp.o" -o ../ogdf-src/doc/examples/cluster/ex-cluster-plan  libOGDF.a libCOIN.a -lpthread

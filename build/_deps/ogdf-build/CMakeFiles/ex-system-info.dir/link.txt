@@ -1,1 +1,0 @@
-/usr/bin/c++  -march=native -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ex-system-info.dir/link.d "CMakeFiles/ex-system-info.dir/doc/examples/special/system-info.cpp.o" -o ../ogdf-src/doc/examples/special/ex-system-info  libOGDF.a libCOIN.a -lpthread
