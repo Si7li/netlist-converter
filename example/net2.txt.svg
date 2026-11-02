@@ -5,10 +5,21 @@
     xmlns:ev="http://www.w3.org/2001/xml-events"
     version="1.1"
     baseProfile="full"
-    viewBox="46 46 267 359">
+    viewBox="20 20 280 440">
     <style>
         .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
         .hori { font-size: 16; fill: #000000; text-anchor: middle }
+        /* Semantic layer styles */
+        .component { }
+        .transistor { }
+        .passive { }
+        .source { }
+        .net { stroke: #000000; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+        .net-power { stroke: #000000; stroke-width: 2; stroke-linejoin: round; }
+        .net-ground { stroke: #000000; stroke-width: 2; stroke-linejoin: round; }
+        .net-signal { stroke: #000000; stroke-width: 1.5; stroke-linejoin: round; }
+        .junction { fill: #000000; }
+        .bridge { stroke: #888888; stroke-width: 1; fill: none; }
     </style>
     <defs>
         <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
@@ -16,89 +27,107 @@
         </marker>
     </defs>
     <g>
-        <rect x="46" y="46" width="267" height="359" style="fill:#ffffff" />
+        <rect x="20" y="20" width="280" height="440" style="fill:#ffffff" />
+    </g>
+    <g class="components transistors" data-layer="transistors">
+    </g>
+    <g class="nets" data-layer="wires">
+        <g class="net net-ground" data-from="0" data-to="V1">
+            <title>0 → V1</title>
+            <path d="M 240 240 L 240 320" />
+        </g>
+        <g class="net net-signal" data-from="c" data-to="R1">
+            <title>c → R1</title>
+            <path d="M 80 240 L 80 320" />
+        </g>
+        <g class="net net-signal" data-from="C1" data-to="c">
+            <title>C1 → c</title>
+            <path d="M 80 160 L 80 240" />
+        </g>
+        <g class="net net-ground" data-from="L1" data-to="0">
+            <title>L1 → 0</title>
+            <path d="M 240 160 L 240 240" />
+        </g>
+        <g class="net net-signal" data-from="L1" data-to="l">
+            <title>L1 → l</title>
+            <path d="M 240 160 L 240 80" />
+        </g>
+        <g class="net net-ground" data-from="C2" data-to="0">
+            <title>C2 → 0</title>
+            <path d="M 160 240 L 240 240" />
+        </g>
+        <g class="net net-signal" data-from="C2" data-to="c">
+            <title>C2 → c</title>
+            <path d="M 160 240 L 80 240" />
+        </g>
+        <g class="net net-signal" data-from="n9" data-to="V1">
+            <title>n9 → V1</title>
+            <path d="M 240 400 L 240 320" />
+        </g>
+        <g class="net net-signal" data-from="n9" data-to="r">
+            <title>n9 → r</title>
+            <path d="M 240 400 L 160 400" />
+        </g>
+        <g class="net net-signal" data-from="n10" data-to="r">
+            <title>n10 → r</title>
+            <path d="M 80 400 L 160 400" />
+        </g>
+        <g class="net net-signal" data-from="n10" data-to="R1">
+            <title>n10 → R1</title>
+            <path d="M 80 400 L 80 320" />
+        </g>
+        <g class="net net-signal" data-from="n11" data-to="C1">
+            <title>n11 → C1</title>
+            <path d="M 80 80 L 80 160" />
+        </g>
+        <g class="net net-signal" data-from="n11" data-to="l">
+            <title>n11 → l</title>
+            <path d="M 80 80 L 240 80" />
+        </g>
+        <circle class="junction" cx="80" cy="240" r="4" />
+    </g>
+    <g class="components other" data-layer="components">
+    <g>
+        <circle cx="240" cy="320" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <circle cx="240" cy="320" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <line x1="240" y1="312" x2="240" y2="328" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
+        <text x="263" y="320" class="vert">V1</text>
+        <text x="263" y="336" class="vert">1</text>
     </g>
     <g>
-        <g>
-            <path fill="none" d="M 273 273 L 273 319" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 133 365 L 180 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 179 L 86 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 180 L 273 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 180 L 273 86" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 180 273 L 273 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 180 273 L 86 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 365 L 273 319" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 365 L 180 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 365 L 133 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 365 L 86 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 86 L 86 179" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 86 L 273 86" stroke="#000000" />
-        </g>
+        <path d="M 240,240 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <path d="M 260,260 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+    </g>
+    <g class="junction">
+        <circle cx="240" cy="240" r="4" style="fill:#000000" />
     </g>
     <g>
-        <circle cx="273" cy="319" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
-        <circle cx="273" cy="319" r="0" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
-        <line x1="273" y1="311" x2="273" y2="327" stroke="#000000" stroke-width="1" marker-end="url(#arrowhead)" />
-        <text x="296" y="319" class="vert">V1</text>
-        <text x="296" y="335" class="vert">1</text>
+        <rect x="70" y="300" width="20" height="40" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="95" y="320" class="vert">R1</text>
+        <text x="95" y="336" class="vert">10k</text>
+    </g>
+    <g class="junction">
+        <circle cx="80" cy="240" r="4" style="fill:#000000" />
     </g>
     <g>
-        <path d="M 273,273 h 20 v 20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
-        <path d="M 293,293 h 10 l -10,10 l -10,-10 h 10" style="fill:#000000;stroke:#000000;stroke-width:1" />
+        <rect x="70" y="155" width="20" height="10" style="fill:#ffffff" />
+        <line x1="70" y1="155" x2="90" y2="155" stroke="#000000" stroke-width="1" />
+        <line x1="70" y1="165" x2="90" y2="165" stroke="#000000" stroke-width="1" />
+        <text x="95" y="160" class="vert">C1</text>
+        <text x="95" y="176" class="vert">10n</text>
     </g>
     <g>
-        <circle cx="273" cy="273" r="2" style="fill:#000000" />
+        <rect x="236" y="142" width="12" height="36" style="fill:#ffffff" />
+        <path d="M 240,142 C 248,146 248,150 240,154 C 248,158 248,162 240,166 C 248,170 248,174 240,178 " style="fill:#ffffff;stroke:#000000;stroke-width:1" />
+        <text x="253" y="160" class="vert">L1</text>
+        <text x="253" y="176" class="vert">5.3</text>
     </g>
     <g>
-        <rect x="113" y="355" width="40" height="20" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
-        <text x="133" y="350" class="hori">R1</text>
-        <text x="133" y="396" class="hori">10k</text>
+        <rect x="155" y="230" width="10" height="20" style="fill:#ffffff" />
+        <line x1="155" y1="230" x2="155" y2="250" stroke="#000000" stroke-width="1" />
+        <line x1="165" y1="230" x2="165" y2="250" stroke="#000000" stroke-width="1" />
+        <text x="160" y="225" class="hori">C2</text>
+        <text x="160" y="271" class="hori">20n</text>
     </g>
-    <g>
-        <circle cx="86" cy="273" r="2" style="fill:#000000" />
-    </g>
-    <g>
-        <rect x="76" y="174" width="20" height="10" style="fill:#ffffff" />
-        <line x1="76" y1="174" x2="96" y2="174" stroke="#000000" stroke-width="1" />
-        <line x1="76" y1="184" x2="96" y2="184" stroke="#000000" stroke-width="1" />
-        <text x="101" y="179" class="vert">C1</text>
-        <text x="101" y="195" class="vert">10n</text>
-    </g>
-    <g>
-        <rect x="269" y="162" width="12" height="36" style="fill:#ffffff" />
-        <path d="M 273,162 C 281,166 281,170 273,174 C 281,178 281,182 273,186 C 281,190 281,194 273,198 " style="fill:#ffffff;stroke:#000000;stroke-width:1" />
-        <text x="286" y="180" class="vert">L1</text>
-        <text x="286" y="196" class="vert">5.3</text>
-    </g>
-    <g>
-        <rect x="175" y="263" width="10" height="20" style="fill:#ffffff" />
-        <line x1="175" y1="263" x2="175" y2="283" stroke="#000000" stroke-width="1" />
-        <line x1="185" y1="263" x2="185" y2="283" stroke="#000000" stroke-width="1" />
-        <text x="180" y="258" class="hori">C2</text>
-        <text x="180" y="304" class="hori">20n</text>
     </g>
 </svg>

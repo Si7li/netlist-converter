@@ -332,13 +332,22 @@ void prepare_source_views(const node &n, node_label_view &label_view, svg_source
 void write_svg_transistor(FILE *f, const node &n)
 {
     // BJT representation with pin labels (C, B, E)
+    // Supports rotation via SVG transform
     constexpr int32_t SIZE = 20;
-    constexpr int32_t PIN_LEN = 12;  // Pin lead length
     node_label_view view(n);
     
+    // Symbol body with rotation transform
+    if (n.rotation != 0)
+    {
+        fprintf(f, "    <g transform=\"rotate(%d, %d, %d)\">\n", n.rotation, n.x, n.y);
+    }
+    else
+    {
+        fprintf(f, "    <g>\n");
+    }
+    
     // Main circle body
-    fprintf(f, "    <g>\n"
-               "        <circle cx=\"%d\" cy=\"%d\" r=\"%d\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1\" />\n",
+    fprintf(f, "        <circle cx=\"%d\" cy=\"%d\" r=\"%d\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1\" />\n",
                n.x, n.y, SIZE);
     
     // Vertical bar inside (emitter junction)
@@ -357,16 +366,36 @@ void write_svg_transistor(FILE *f, const node &n)
     fprintf(f, "        <line x1=\"%d\" y1=\"%d\" x2=\"%d\" y2=\"%d\" stroke=\"#000000\" stroke-width=\"1\" />\n",
                n.x - SIZE, n.y, n.x - SIZE/4, n.y);
     
-    // Pin labels
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">C</text>\n",
-               n.x + SIZE + 2, n.y - SIZE + 4);
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">B</text>\n",
-               n.x - SIZE - 10, n.y + 3);
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">E</text>\n",
-               n.x + SIZE + 2, n.y + SIZE + 4);
+    fprintf(f, "    </g>\n");
     
-    view.x_name = n.x + SIZE + label_dist + 10;
-    view.y_name = n.y;
+    // Pin labels and component labels (drawn without rotation for readability)
+    fprintf(f, "    <g>\n");
+    
+    int32_t c_dx = SIZE + 2, c_dy = -SIZE + 4;
+    int32_t b_dx = -SIZE - 10, b_dy = 3;
+    int32_t e_dx = SIZE + 2, e_dy = SIZE + 4;
+    svg::rotate_offset(c_dx, c_dy, n.rotation);
+    svg::rotate_offset(b_dx, b_dy, n.rotation);
+    svg::rotate_offset(e_dx, e_dy, n.rotation);
+    
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">C</text>\n",
+               n.x + c_dx, n.y + c_dy);
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">B</text>\n",
+               n.x + b_dx, n.y + b_dy);
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">E</text>\n",
+               n.x + e_dx, n.y + e_dy);
+    
+    if (n.rotation == 90 || n.rotation == 270)
+    {
+        view.x_name = n.x + SIZE + label_dist + 10;
+        view.y_name = n.y - SIZE - label_dist;
+        view.orient = orientation::horizontal;
+    }
+    else
+    {
+        view.x_name = n.x + SIZE + label_dist + 10;
+        view.y_name = n.y;
+    }
     view.x_val = view.x_name;
     view.y_val = view.y_name + svg::font_size;
     write_svg_labels(f, view);
@@ -376,14 +405,23 @@ void write_svg_transistor(FILE *f, const node &n)
 void write_svg_mosfet(FILE *f, const node &n)
 {
     // MOSFET representation with pin labels (G, D, S)
-    constexpr int32_t SIZE = 20;
+    // Supports rotation via SVG transform
     constexpr int32_t BODY_W = 24;
     constexpr int32_t BODY_H = 30;
     node_label_view view(n);
     
+    // Symbol body with rotation transform
+    if (n.rotation != 0)
+    {
+        fprintf(f, "    <g transform=\"rotate(%d, %d, %d)\">\n", n.rotation, n.x, n.y);
+    }
+    else
+    {
+        fprintf(f, "    <g>\n");
+    }
+    
     // Main body rectangle
-    fprintf(f, "    <g>\n"
-               "        <rect x=\"%d\" y=\"%d\" width=\"%d\" height=\"%d\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1\" />\n",
+    fprintf(f, "        <rect x=\"%d\" y=\"%d\" width=\"%d\" height=\"%d\" style=\"fill:#ffffff;stroke:#000000;stroke-width:1\" />\n",
                n.x - BODY_W/2, n.y - BODY_H/2, BODY_W, BODY_H);
     
     // Gate bar (left side, separated)
@@ -406,16 +444,36 @@ void write_svg_mosfet(FILE *f, const node &n)
     fprintf(f, "        <line x1=\"%d\" y1=\"%d\" x2=\"%d\" y2=\"%d\" stroke=\"#000000\" stroke-width=\"1\" />\n",
                n.x - BODY_W/4, n.y - BODY_H/3, n.x - BODY_W/4, n.y + BODY_H/3);
     
-    // Pin labels
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">D</text>\n",
-               n.x + 4, n.y - BODY_H/2 - 4);
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">G</text>\n",
-               n.x - BODY_W/2 - 22, n.y + 3);
-    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">S</text>\n",
-               n.x + 4, n.y + BODY_H/2 + 12);
+    fprintf(f, "    </g>\n");
     
-    view.x_name = n.x + BODY_W/2 + label_dist + 5;
-    view.y_name = n.y;
+    // Pin labels and component labels (drawn without rotation for readability)
+    fprintf(f, "    <g>\n");
+    
+    int32_t d_dx = 4, d_dy = -BODY_H/2 - 4;
+    int32_t g_dx = -BODY_W/2 - 22, g_dy = 3;
+    int32_t s_dx = 4, s_dy = BODY_H/2 + 12;
+    svg::rotate_offset(d_dx, d_dy, n.rotation);
+    svg::rotate_offset(g_dx, g_dy, n.rotation);
+    svg::rotate_offset(s_dx, s_dy, n.rotation);
+    
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">D</text>\n",
+               n.x + d_dx, n.y + d_dy);
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">G</text>\n",
+               n.x + g_dx, n.y + g_dy);
+    fprintf(f, "        <text x=\"%d\" y=\"%d\" style=\"font-size:8;fill:#666666\">S</text>\n",
+               n.x + s_dx, n.y + s_dy);
+    
+    // Component name/value labels
+    if (n.rotation == 90 || n.rotation == 270)
+    {
+        view.x_name = n.x + BODY_H/2 + 10 + label_dist;
+        view.y_name = n.y;
+    }
+    else
+    {
+        view.x_name = n.x + BODY_W/2 + label_dist + 5;
+        view.y_name = n.y;
+    }
     view.x_val = view.x_name;
     view.y_val = view.y_name + svg::font_size;
     write_svg_labels(f, view);

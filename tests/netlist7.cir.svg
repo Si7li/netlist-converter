@@ -5,10 +5,12 @@
     xmlns:ev="http://www.w3.org/2001/xml-events"
     version="1.1"
     baseProfile="full"
-    viewBox="46 46 267 359">
+    viewBox="26 26 307 399">
     <style>
         .vert { font-size: 16; fill: #000000; dominant-baseline: middle }
         .hori { font-size: 16; fill: #000000; text-anchor: middle }
+        .wire { fill: none; stroke: #000000; stroke-width: 2; stroke-linejoin: round }
+        .pin-wire { fill: none; stroke-width: 2; stroke-linejoin: round }
     </style>
     <defs>
         <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="0" refY="4" orient="auto">
@@ -16,7 +18,7 @@
         </marker>
     </defs>
     <g>
-        <rect x="46" y="46" width="267" height="359" style="fill:#ffffff" />
+        <rect x="26" y="26" width="307" height="399" style="fill:#ffffff" />
     </g>
     <g>
         <rect x="168" y="212" width="24" height="30" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
@@ -25,6 +27,8 @@
         <line x1="180" y1="212" x2="180" y2="202" stroke="#000000" stroke-width="1" />
         <line x1="180" y1="242" x2="180" y2="252" stroke="#000000" stroke-width="1" />
         <line x1="174" y1="217" x2="174" y2="237" stroke="#000000" stroke-width="1" />
+    </g>
+    <g>
         <text x="184" y="208" style="font-size:8;fill:#666666">D</text>
         <text x="146" y="230" style="font-size:8;fill:#666666">G</text>
         <text x="184" y="254" style="font-size:8;fill:#666666">S</text>
@@ -38,6 +42,8 @@
         <line x1="273" y1="165" x2="273" y2="155" stroke="#000000" stroke-width="1" />
         <line x1="273" y1="195" x2="273" y2="205" stroke="#000000" stroke-width="1" />
         <line x1="267" y1="170" x2="267" y2="190" stroke="#000000" stroke-width="1" />
+    </g>
+    <g>
         <text x="277" y="161" style="font-size:8;fill:#666666">D</text>
         <text x="239" y="183" style="font-size:8;fill:#666666">G</text>
         <text x="277" y="207" style="font-size:8;fill:#666666">S</text>
@@ -45,45 +51,19 @@
         <text x="295" y="196" class="vert">NMOS_mo</text>
     </g>
     <g>
-        <g>
-            <path fill="none" d="M 86 365 L 180 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 272 L 86 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 365 L 180 365" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 365 L 273 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 180 L 86 272" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 86 180 L 180 180" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 180 273 L 273 273" stroke="#000000" />
-        </g>
-        <g>
-            <path fill="none" d="M 180 202 L 180 180" stroke="#CC0000" stroke-width="2" />
-        </g>
-        <g>
-            <path fill="none" d="M 153 227 L 180 227 L 180 180" stroke="#0000CC" stroke-width="2" />
-        </g>
-        <g>
-            <path fill="none" d="M 180 252 L 273 252 L 273 273" stroke="#00AA00" stroke-width="2" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 155 L 273 86" stroke="#CC0000" stroke-width="2" />
-        </g>
-        <g>
-            <path fill="none" d="M 246 180 L 180 180" stroke="#0000CC" stroke-width="2" />
-        </g>
-        <g>
-            <path fill="none" d="M 273 205 L 273 273" stroke="#00AA00" stroke-width="2" />
-        </g>
+        <path class="wire" d="M 86 365 L 180 365" />
+        <path class="wire" d="M 86 272 L 86 365" />
+        <path class="wire" d="M 273 365 L 180 365" />
+        <path class="wire" d="M 273 365 L 273 273" />
+        <path class="wire" d="M 86 180 L 86 272" />
+        <path class="wire" d="M 86 180 L 180 180" />
+        <path class="wire" d="M 180 273 L 273 273" />
+        <path class="pin-wire" d="M 180 202 L 180 180" stroke="#CC0000" />
+        <path class="pin-wire" d="M 153 227 L 180 227 L 180 180" stroke="#0000CC" />
+        <path class="pin-wire" d="M 180 252 L 273 252 L 273 273" stroke="#00AA00" />
+        <path class="pin-wire" d="M 273 155 L 273 86" stroke="#CC0000" />
+        <path class="pin-wire" d="M 246 180 L 180 180" stroke="#0000CC" />
+        <path class="pin-wire" d="M 273 205 L 273 273" stroke="#00AA00" />
     </g>
     <g>
         <circle cx="180" cy="365" r="18" style="fill:#ffffff;stroke:#000000;stroke-width:1" />
